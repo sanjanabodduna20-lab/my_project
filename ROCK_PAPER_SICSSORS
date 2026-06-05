@@ -1,0 +1,21 @@
+print("ROCK PAPER SCISSOR")
+
+player1 = input("Please enter player 1's choice: ")
+player2 = input("Please enter player 2's choice: ")
+
+if player1 == player2:
+    print("It's a tie!")
+elif (
+    (player1 == "rock" and player2 == "scissor")
+    or (player1 == "scissor" and player2 == "paper")
+    or (player1 == "paper" and player2 == "rock")
+):
+    print("Player 1 wins")
+elif (
+    (player2 == "rock" and player1 == "scissor")
+    or (player2 == "scissor" and player1 == "paper")
+    or (player2 == "paper" and player1 == "rock")
+):
+    print("Player 2 wins")
+else:
+    print("Please enter a valid choice!")
